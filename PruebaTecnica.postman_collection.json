@@ -1,0 +1,419 @@
+{
+	"info": {
+		"_postman_id": "61850cf4-07e3-49f3-b59e-d6a080c761c2",
+		"name": "PruebaTecnica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "client",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-role",
+								"type": "text",
+								"value": "customer"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"nombre\": \"Jose Lema\",\r\n   \"direccion\":\"Otavalo sn y principal\",\r\n   \"telefono\":\"098254785\",\r\n   \"contrasenna\":\"aaa\",\r\n   \"estado\":true,\r\n   \"edad\":10,\r\n   \"identificacion\":\"1111111111\",\r\n   \"genero\":\"M\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clientes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-role",
+								"type": "text",
+								"value": "customer"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"nombre\": \"Jose Lema\",\r\n   \"direccion\":\"Otavalo sn y principal\",\r\n   \"telefono\":\"098254785\",\r\n   \"contrasenna\":\"aaab\",\r\n   \"estado\":true,\r\n   \"edad\":10,\r\n   \"identificacion\":\"1111111111\",\r\n   \"genero\":\"M\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clientes/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE Parcial",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "x-role",
+								"type": "text",
+								"value": "customer"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \r\n   \"contrasenna\":\"aaabc\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clientes/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-role",
+								"type": "text",
+								"value": "customer"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"nombre\": \"Jose Lema\",\r\n   \"direccion\":\"Otavalo sn y principal\",\r\n   \"telefono\":\"098254785\",\r\n   \"contrasenna\":\"aaa\",\r\n   \"estado\":true,\r\n   \"edad\":10,\r\n   \"identificacion\":\"1111111111\",\r\n   \"genero\":\"M\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clientes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-role",
+								"type": "text",
+								"value": "customer"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"nombre\": \"Jose Lema\",\r\n   \"direccion\":\"Otavalo sn y principal\",\r\n   \"telefono\":\"098254785\",\r\n   \"contrasenna\":\"aaa\",\r\n   \"estado\":true,\r\n   \"edad\":10,\r\n   \"identificacion\":\"1111111111\",\r\n   \"genero\":\"M\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clientes/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-role",
+								"type": "text",
+								"value": "customer"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"nombre\": \"Jose Lema\",\r\n   \"direccion\":\"Otavalo sn y principal\",\r\n   \"telefono\":\"098254785\",\r\n   \"contrasenna\":\"aaa\",\r\n   \"estado\":true,\r\n   \"edad\":10,\r\n   \"identificacion\":\"1111111111\",\r\n   \"genero\":\"M\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clientes/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "account",
+			"item": [
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"entidad\": \"Banco Ejemplo\",\r\n  \"numeroCuenta\": \"478758\",\r\n  \"tipoCuenta\": \"Ahorro\",\r\n  \"saldoInicial\": 2000,\r\n  \"clienteid\": 1,\r\n  \"estado\": true,\r\n  \"clienteNombre\": \"Jose Lema\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cuentas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-role",
+								"type": "text",
+								"value": "customer"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"entidad\": \"Banco Ejemplo\",\r\n  \"numeroCuenta\": \"478758\",\r\n  \"tipoCuenta\": \"Ahorro\",\r\n  \"saldoInicial\": 2001,\r\n  \"clienteid\": 1,\r\n  \"estado\": true,\r\n  \"clienteNombre\": \"Jose Lema\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cuentas/bb632103-669d-4060-aa25-a78f066868d1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"bb632103-669d-4060-aa25-a78f066868d1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE PARCIAL",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-role",
+								"type": "text",
+								"value": "customer"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n  \"saldoInicial\": 2002\r\n  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cuentas/bb632103-669d-4060-aa25-a78f066868d1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"bb632103-669d-4060-aa25-a78f066868d1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-role",
+								"type": "text",
+								"value": "customer"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/cuentas/bb632103-669d-4060-aa25-a78f066868d1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"bb632103-669d-4060-aa25-a78f066868d1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "movement",
+			"item": [
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"entidad\": \"Banco Ejemplo\",\r\n  \"tipoMovimiento\": \"Depósito\",\r\n  \"saldo\": 1500.75,\r\n  \"valor\": 500.00,\r\n  \"fecha\": \"2024-07-31T10:15:30\",\r\n  \"accountid\":\"6330e404-8b29-4bc4-9350-1760fb5f5e02\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/movimientos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "REPORTE",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"entidad\": \"Banco Ejemplo\",\r\n  \"tipoMovimiento\": \"Depósito\",\r\n  \"saldo\": 1500.75,\r\n  \"valor\": 500.00,\r\n  \"fecha\": \"2024-07-31T10:15:30\",\r\n  \"accountid\":\"64e3885d-1273-4e62-94f5-dd23b65bc9b5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/reportes?fecha=2024-07-30,2024-08-01&accountId=f4d08304-e52e-48a7-9879-d918f301b348",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reportes"
+							],
+							"query": [
+								{
+									"key": "fecha",
+									"value": "2024-07-30,2024-08-01"
+								},
+								{
+									"key": "accountId",
+									"value": "f4d08304-e52e-48a7-9879-d918f301b348"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
